@@ -27,10 +27,15 @@ python pixela_tracker.py
 The following functions are included in the script:
 
 create_user(token, username, agree_terms_of_service, not_minor, thanks_code): Creates a new user.
+
 create_graph(token, username, graph_id, graph_name, unit, type, color, timezone, is_secret): Creates a new graph.
+
 create_pixel(token, username, graph_id, date, quantity, optional_data): Posts a pixel to a graph.
+
 delete_pixel(token, username, graph_id, date): Deletes a pixel from a graph.
+
 update_pixel(token, username, graph_id, date, quantity): Updates a pixel in a graph.
+
 Each function corresponds to a specific action you can take via the Pixela API, and all parameters are necessary for the API request. Ensure to replace placeholder values with actual data before running the script.
 
 ## Contributing
