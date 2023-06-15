@@ -29,9 +29,13 @@ delete_pixel(token, username, graph_id, date): Deletes a pixel from a graph.
 update_pixel(token, username, graph_id, date, quantity): Updates a pixel in a graph.
 Each function corresponds to a specific action you can take via the Pixela API, and all parameters are necessary for the API request. Ensure to replace placeholder values with actual data before running the script.
 
-Contributing
+## Contributing
 Contributions are always welcome. Please make sure to update tests as appropriate.
 
-License
-MIT
+## License
+This project is licensed under the MIT License.
+
+https://github.com/raimoncoding/habit-tracker/blob/main/LICENSE.txt
+
+For more details, please refer to the license file in the repository.
 
