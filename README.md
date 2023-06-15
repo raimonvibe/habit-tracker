@@ -2,6 +2,10 @@
 
 This repository contains Python scripts that interact with the Pixela API, a habit tracking and visualization service. With this script, you can automate tracking your habits or activities and visualize them in the form of a GitHub-like graph.
 
+## My own link to the project:
+
+https://pixe.la/v1/users/raimoncoding/graphs/coding-hours.html
+
 ## Dependencies
 
 - Python 3.x
