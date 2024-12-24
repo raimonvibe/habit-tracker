@@ -1,42 +1,58 @@
 # Pixela Python Tracker
 
+![Pixela Graph Screenshot](./pixela_screenshot.png)
+
 This repository contains Python scripts that interact with the Pixela API, a habit tracking and visualization service. With this script, you can automate tracking your habits or activities and visualize them in the form of a GitHub-like graph.
 
-## The link to the project I have developed:
+## Live Visualization
 
-https://pixe.la/v1/users/raimoncoding/graphs/coding-hours.html
+This project leverages [Pixela](https://pixe.la/) to visually track habits. You can see the live graph here:
+
+https://pixe.la/v1/users/raimonvibe/graphs/coding-hours.html
+
+## Setup & Usage
+
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   pip install requests
+   ```
+3. Replace the following placeholders in `main.py` with your information:
+   - `<api-token>` - Your Pixela API token
+   - `<username>` - Your Pixela username
+   - `<graph-id>` - Your graph ID
+   - `<timezone>` - Your timezone (e.g., "Asia/Tokyo")
+
+4. Run the script:
+   ```bash
+   python main.py
+   ```
 
 ## Dependencies
 
 - Python 3.x
 - `requests` library
 
-## Setup
+## Available Functions
 
-1. Clone this repository.
-2. Install dependencies using pip: `pip install requests`
-3. Replace `<api-token>`, `<username>`, `<graph-id>`, and `<timezone>` with your actual information in the script.
+The script provides the following functions to interact with the Pixela API:
 
-## Usage
+- `create_user(token, username, agree_terms_of_service, not_minor, thanks_code)`
+  - Creates a new Pixela user account
 
-Run the main script:
+- `create_graph(token, username, graph_id, graph_name, unit, type, color, timezone, is_secret)`
+  - Creates a new graph for tracking habits
 
-python pixela_tracker.py
+- `create_pixel(token, username, graph_id, date, quantity, optional_data)`
+  - Posts a new data point (pixel) to your graph
 
-## Functions
-The following functions are included in the script:
+- `delete_pixel(token, username, graph_id, date)`
+  - Removes a data point from your graph
 
-create_user(token, username, agree_terms_of_service, not_minor, thanks_code): Creates a new user.
+- `update_pixel(token, username, graph_id, date, quantity)`
+  - Modifies an existing data point
 
-create_graph(token, username, graph_id, graph_name, unit, type, color, timezone, is_secret): Creates a new graph.
-
-create_pixel(token, username, graph_id, date, quantity, optional_data): Posts a pixel to a graph.
-
-delete_pixel(token, username, graph_id, date): Deletes a pixel from a graph.
-
-update_pixel(token, username, graph_id, date, quantity): Updates a pixel in a graph.
-
-Each function corresponds to a specific action you can take via the Pixela API, and all parameters are necessary for the API request. Ensure to replace placeholder values with actual data before running the script.
+Each function maps directly to a Pixela API endpoint. Make sure to replace all placeholder values with your actual data before using these functions.
 
 ## Contributing
 Contributions are always welcome. Please make sure to update tests as appropriate.
