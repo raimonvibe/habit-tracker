@@ -2,7 +2,15 @@
 
 ![Pixela Graph Screenshot](./pixela_screenshot.png)
 
-This repository contains Python scripts that interact with the Pixela API, a habit tracking and visualization service. With this script, you can automate tracking your habits or activities and visualize them in the form of a GitHub-like graph.
+This repository contains Python scripts that interact with the Pixela API, a habit tracking and visualization service. Track your daily coding hours with detailed statistics:
+
+- Total Hours Tracked: 203 hours
+- Maximum Daily: 12 hours
+- Minimum Daily: 3 hours
+- Average: 7.25 hours/day
+- Data Points: 28 days of tracking
+
+With this script, you can automate tracking your habits or activities and visualize them in the form of a GitHub-like graph.
 
 ## Live Visualization
 
