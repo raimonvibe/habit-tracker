@@ -68,7 +68,7 @@ Contributions are always welcome. Please make sure to update tests as appropriat
 ## License
 This project is licensed under the MIT License.
 
-https://github.com/raimoncoding/habit-tracker/blob/main/LICENSE.txt
+https://github.com/raimonvibe/habit-tracker/blob/main/LICENSE.txt
 
 For more details, please refer to the license file in the repository.
 
